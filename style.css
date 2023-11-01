@@ -122,16 +122,6 @@ a {
     transition: left 0.3s ease;
 }
 
-.background {
-    position: absolute;
-    height: 90vh;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: auto;
-}
-
 @media (min-width: 800px) {
     .nav h1,
     .slider h1 {
@@ -143,7 +133,7 @@ a {
     }
 }
 
-@media screen only (min-width: 360px) {
+@media screen and (min-width: 360px) {
     .nav h1,
     .slider h1 {
         font-size: 8vw;
@@ -156,16 +146,6 @@ a {
     .nav-tab {
         font-size: 1.2vw;
     }
-}
-
-.background {
-    position: absolute;
-    height: 100vh;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 0;
 }
 
 .loader span {
@@ -432,4 +412,27 @@ a {
     background: #333;
     color: whitesmoke;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        overflow: scroll;
+        overflow-y: hidden;
+        width: 100%;
+        max-height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        flex-wrap: wrap;
+    }
+    .container .info-card {
+        margin: 10px;
+    }
+    .cards-container {
+        flex-direction: column;
+    }
+    .card {
+        margin: 20px;
+        width: 100%;
+    }
 }
