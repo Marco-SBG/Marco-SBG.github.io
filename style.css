@@ -8,6 +8,11 @@ body {
     font-family: "ROBOTO", sans-serif;
 }
 
+.nav {
+    position: relative;
+    background-image: url(/resources/neon-background-h2wn0f5bm2j6zg8n.jpg);
+}
+
 .nav,
 .slider {
     display: flex;
